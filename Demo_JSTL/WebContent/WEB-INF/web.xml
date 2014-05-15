@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Demo_JSTL</display-name>
+  
+    <!-- 注册JSTL函数 -->  
+  <jsp-config>  
+    <taglib>  
+        <taglib-uri>http://github.dzhia.net/test/functions</taglib-uri>  
+        <taglib-location>/WEB-INF/myfunctions.tld</taglib-location>  
+    </taglib>  
+  </jsp-config>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>JSTLDemoServlet</display-name>
+    <servlet-name>JSTLDemoServlet</servlet-name>
+    <servlet-class>com.d.jstl.servlet.JSTLDemoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JSTLDemoServlet</servlet-name>
+    <url-pattern>/JSTLDemoServlet</url-pattern>
+  </servlet-mapping>
+  
+
+   
+</web-app>
