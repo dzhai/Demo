@@ -1,6 +1,6 @@
 package com.d.builder;
 
-public class Test {
+public class TestCase {
 
 	public static void main(String[] args) {
 		Builder builder = new ConcreteBuilder();
