@@ -11,6 +11,7 @@ public class ComputerEngineer {
 	private void perpareHardwares(AbstractFactory af) {
 		this.cpu=af.createCpu();
 		this.mainboadr=af.createMainBoard();
+		
 		this.cpu.calculate();
 		this.mainboadr.installCPU();
 
